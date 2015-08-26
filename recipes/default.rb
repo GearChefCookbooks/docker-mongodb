@@ -1,10 +1,3 @@
-#Decided to use a different mongo docker from tutum
-#docker_image 'mongo:2.6' do
-#  retries 3
-#  retry_delay 2
-#  cmd_timeout 900
-#end
-
 docker_image 'gear2000/mongodb-10gen:2.6' do
   retries 3
   retry_delay 2
