@@ -9,7 +9,6 @@ if `sudo docker ps -a | grep mongodb`.size > 0
   execute('remove container') { command "docker rm -f mongodb" }
 end
 
-
 docker_container 'mongodb' do
   container_name 'mongodb'
   image 'gear2000/mongodb-10gen:2.6'
